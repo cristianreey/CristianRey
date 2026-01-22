@@ -1,0 +1,572 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="#0B0F18" name="theme-color" />
+    <meta
+      content="Portfolio profesional de Cristian Rey — Desarrollador Web. HTML, CSS, JavaScript, React/Angular."
+      name="description"
+    />
+    <title>Cristian Rey · Portfolio</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <!-- Tipografías elegantes (sin frameworks) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div aria-hidden="true" class="scroll-progress">
+      <div class="scroll-progress__bar" id="scrollProgress"></div>
+    </div>
+    <a aria-label="Volver arriba" class="backtop" href="#top" id="backTop">↑</a>
+
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a aria-label="Ir al inicio" class="brand" href="#top">
+          <span aria-hidden="true" class="brand__mark"></span>
+          <span class="brand__text">Cristian Rey</span>
+        </a>
+        <nav aria-label="Navegación principal" class="nav">
+          <button aria-controls="navMenu" aria-expanded="false" class="nav__toggle" id="navToggle">
+            <span aria-hidden="true" class="nav__toggleLines"></span>
+            <span class="sr">Abrir menú</span>
+          </button>
+          <div class="nav__menu" id="navMenu">
+            <a class="nav__link" href="#about">Sobre mí</a>
+            <a class="nav__link" href="#skills">Habilidades</a>
+            <a class="nav__link" href="#experience">Experiencia</a>
+            <a class="nav__link" href="#education">Formación</a>
+            <a class="nav__link" href="#projects">Proyectos</a>
+            <a class="nav__link" href="#contact">Contacto</a>
+            <a
+              class="nav__link nav__link--icon"
+              href="https://www.linkedin.com/in/cristian-rey-626257270/"
+              rel="noopener"
+              target="_blank"
+            >
+              LinkedIn <span aria-hidden="true">↗</span>
+            </a>
+            <button
+              aria-label="Cambiar tema"
+              class="btn btn--ghost nav__theme"
+              id="themeToggle"
+              type="button"
+            >
+              <span aria-hidden="true" class="themeIcon">◐</span>
+              <span class="sr">Cambiar tema</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="badge">
+              <span class="badge__dot"></span>
+              Desarrollador Web · Técnico Superior (DAW)
+            </p>
+            <h1 class="hero__title">
+              Construyo experiencias web <span class="accent">modernas</span>,
+              <span class="accent">limpias</span> y <span class="accent">eficientes</span>.
+            </h1>
+            <p class="hero__lead">
+              Especializado en desarrollo front-end y soluciones funcionales con
+              <strong>HTML5</strong>, <strong>CSS3</strong> y <strong>JavaScript</strong>. Enfoque
+              en UX, rendimiento y código mantenible.
+            </p>
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#projects">Ver proyectos</a>
+              <a class="btn btn--soft" href="#contact">Contactar</a>
+              <a
+                class="btn btn--ghost"
+                href="./assets/pdf/CvCristianrey.pdf"
+                rel="noopener"
+                target="_blank"
+                >Descargar CV</a
+              >
+            </div>
+            <div class="hero__meta">
+              <div class="meta">
+                <span class="meta__k">Ubicación</span>
+                <span class="meta__v">Avd. de las Américas, 31, Bj D</span>
+              </div>
+              <div class="meta">
+                <span class="meta__k">Email</span>
+                <a class="meta__v link" href="mailto:Cris11salle@gmail.com"
+                  >Cris11salle@gmail.com</a
+                >
+              </div>
+              <div class="meta">
+                <span class="meta__k">Teléfono</span>
+                <a class="meta__v link" href="tel:+34665372510">+34 665 372 510</a>
+              </div>
+            </div>
+
+            <div class="trust" data-reveal="true">
+              <p class="trust__label">Confianza rápida</p>
+              <ul class="trust__list">
+                <li>Código mantenible y accesible</li>
+                <li>Diseño responsive (mobile-first)</li>
+                <li>Entrega clara: demo + repositorio</li>
+                <li>Comunicación y seguimiento semanal</li>
+              </ul>
+            </div>
+          </div>
+
+          <aside aria-label="Tarjeta de perfil" class="hero__card">
+            <div class="profile" data-reveal="true">
+              <div aria-hidden="true" class="profile__avatar">
+                <img alt="Foto de Cristian Rey" loading="lazy" src="./assets/img/profile.svg" />
+              </div>
+              <div class="profile__info">
+                <h2 class="profile__name">Cristian Rey</h2>
+                <p class="profile__role">Desarrollador Web</p>
+                <div aria-label="Tecnologías principales" class="profile__chips">
+                  <span class="chip">HTML5</span>
+                  <span class="chip">CSS3</span>
+                  <span class="chip">JavaScript</span>
+                  <span class="chip">React</span>
+                  <span class="chip">Angular</span>
+                </div>
+              </div>
+              <div class="profile__actions">
+                <a class="btn btn--ghost" href="#contact">Disponible</a>
+                <a class="btn btn--ghost" href="#experience">Ver experiencia</a>
+                <a
+                  class="btn btn--ghost"
+                  href="https://www.linkedin.com/in/cristian-rey-626257270/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  LinkedIn ↗
+                </a>
+              </div>
+              <div class="profile__facts" role="list">
+                <div class="fact" role="listitem">
+                  <span class="fact__k">Idioma</span>
+                  <span class="fact__v">ES</span>
+                </div>
+                <div class="fact" role="listitem">
+                  <span class="fact__k">Disponibilidad</span>
+                  <span class="fact__v">Inmediata</span>
+                </div>
+                <div class="fact" role="listitem">
+                  <span class="fact__k">Modalidad</span>
+                  <span class="fact__v">Presencial / Remoto</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section__head" data-reveal="true">
+            <p class="section__eyebrow">Sobre mí</p>
+            <h2 class="section__title">Sobre mí</h2>
+            <p class="section__subtitle">
+              Cómo pienso, cómo trabajo y qué aporto en un proyecto real.
+            </p>
+          </div>
+          <div class="about__grid">
+            <div class="card about__card" data-reveal="true">
+              <h3 class="card__title">Enfoque</h3>
+              <p class="card__text">
+                Me centro en construir interfaces claras y rápidas, con un diseño que se entiende
+                sin explicación. Me gusta trabajar con buenas prácticas: estructura limpia,
+                accesibilidad y detalles de UX.
+              </p>
+            </div>
+            <div class="card about__card" data-reveal="true">
+              <h3 class="card__title">Qué me diferencia</h3>
+              <p class="card__text">
+                No solo “maqueto”: convierto necesidades en una solución usable. Prioridad en
+                rendimiento, responsive real y consistencia visual. La entrega siempre es clara:
+                demo, código y explicación breve.
+              </p>
+            </div>
+
+            <div class="how card" data-reveal="true">
+              <h3 class="card__title">Cómo trabajo (de principio a fin)</h3>
+              <ol class="how__steps">
+                <li>
+                  <span class="how__k">Diagnóstico</span
+                  ><span class="how__v"
+                    >Entiendo objetivo, público y restricciones. Defino alcance y entregables.</span
+                  >
+                </li>
+                <li>
+                  <span class="how__k">Diseño &amp; Arquitectura</span
+                  ><span class="how__v"
+                    >Estructura de UI, componentes y estados. Priorizo accesibilidad.</span
+                  >
+                </li>
+                <li>
+                  <span class="how__k">Implementación</span
+                  ><span class="how__v">Código limpio, responsive y probado. Commits claros.</span>
+                </li>
+                <li>
+                  <span class="how__k">Optimización</span
+                  ><span class="how__v">Rendimiento, SEO básico, imágenes y detalles de UX.</span>
+                </li>
+                <li>
+                  <span class="how__k">Entrega</span
+                  ><span class="how__v"
+                    >Demo, documentación breve y siguiente paso recomendado.</span
+                  >
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section__head" data-reveal="true">
+            <p class="section__eyebrow">Habilidades</p>
+            <h2 class="section__title">Habilidades</h2>
+            <p class="section__subtitle">
+              Tecnologías y prácticas que aplico para construir productos sólidos.
+            </p>
+          </div>
+          <div class="grid grid--3">
+            <div class="card" data-reveal="true">
+              <h3 class="card__title">Front-end</h3>
+              <p class="card__text">
+                HTML5, CSS3, JavaScript, Responsive, Accesibilidad básica, UI pulida.
+              </p>
+            </div>
+            <div class="card" data-reveal="true">
+              <h3 class="card__title">Frameworks</h3>
+              <p class="card__text">
+                React y Angular (componentes, estados, estructura escalable).
+              </p>
+            </div>
+            <div class="card" data-reveal="true">
+              <h3 class="card__title">Calidad</h3>
+              <p class="card__text">
+                Código mantenible, organización, consistencia visual y entrega clara.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section__head" data-reveal="true">
+            <p class="section__eyebrow">Experiencia</p>
+            <h2 class="section__title">Experiencia</h2>
+            <p class="section__subtitle">
+              Experiencia práctica con foco en resultados y aprendizaje continuo.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline__item card" data-reveal="true">
+              <h3 class="card__title">Desarrollador Web</h3>
+              <p class="card__text">
+                Construcción y maquetación de webs modernas, responsive y orientadas a UX.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section__head" data-reveal="true">
+            <p class="section__eyebrow">Formación</p>
+            <h2 class="section__title">Formación</h2>
+            <p class="section__subtitle">Base técnica y certificaciones para seguir creciendo.</p>
+          </div>
+
+          <div class="grid grid--2">
+            <div class="card edu__item" data-reveal="true">
+              <h3 class="card__title">Técnico Superior en Desarrollo de Aplicaciones Web</h3>
+              <p class="card__text">
+                Formación enfocada en desarrollo web, buenas prácticas y proyectos.
+              </p>
+            </div>
+            <div class="card edu__item" data-reveal="true">
+              <h3 class="card__title">Aprendizaje continuo</h3>
+              <p class="card__text">Mejora constante en frameworks, UI/UX y optimización.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section__head" data-reveal="true">
+            <p class="section__eyebrow">Proyectos</p>
+            <h2 class="section__title">Proyectos</h2>
+            <p class="section__subtitle">Casos reales. Qué hice, con qué stack y qué mejoró.</p>
+          </div>
+
+          <div aria-label="Filtrar proyectos" class="filters hidden" role="tablist">
+            <button aria-selected="true" class="filter is-active" data-filter="all" role="tab">
+              Todos
+            </button>
+            <button aria-selected="false" class="filter" data-filter="frontend" role="tab">
+              Front-end
+            </button>
+            <button aria-selected="false" class="filter" data-filter="app" role="tab">App</button>
+            <button aria-selected="false" class="filter" data-filter="ui" role="tab">UI/UX</button>
+          </div>
+
+          <div class="grid grid--3 projects" id="projectsGrid">
+            <article
+              class="project card"
+              data-context="Marca personal para mostrar servicios y trabajos."
+              data-highlights="Landing optimizada, secciones claras, responsive, CTA visibles."
+              data-reveal="true"
+              data-result="Mejora de claridad del servicio y navegación simple."
+              data-role="Front-end (diseño + desarrollo)."
+              data-tags="frontend ui"
+            >
+              <div aria-hidden="true" class="project__thumb">
+                <img alt="" loading="lazy" src="assets/img/Rexowebs.png" />
+              </div>
+              <div class="project__body">
+                <h3 class="card__title">RexoWeb´s</h3>
+                <p class="card__text">
+                  Web realizada para una marca personal, para el desempeño profesional como
+                  desarrollador de aplicaciones web.
+                </p>
+                <ul class="tags tags--mini">
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">JS</li>
+                  <li class="tag">RESPONSIVE</li>
+                </ul>
+                <div class="project__actions">
+                  <button class="btn btn--soft project__case" data-case="open" type="button">
+                    Caso
+                  </button>
+                  <a aria-label="Ver demo" class="btn btn--ghost" href="https://rexowebs.es/"
+                    >Demo</a
+                  >
+                  <a
+                    aria-label="Ver código"
+                    class="btn btn--ghost"
+                    href="https://github.com/cristianreey/rexoweb.git"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project card"
+              data-context="Web de presentación de club deportivo amateur."
+              data-highlights="Estructura por secciones, galería/medios, diseño adaptable."
+              data-reveal="true"
+              data-result="Presencia online profesional y fácil de compartir."
+              data-role="Front-end (maquetación + JS)."
+              data-tags="app frontend"
+            >
+              <div aria-hidden="true" class="project__thumb">
+                <img alt="" loading="lazy" src="assets/img/energypower.png" />
+              </div>
+              <div class="project__body">
+                <h3 class="card__title">Energy Power C.F</h3>
+                <p class="card__text">
+                  Web realizada para la presentación de un club deportivo de futbol de aficionados.
+                </p>
+                <ul class="tags tags--mini">
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">JS</li>
+                  <li class="tag">RESPONSIVE</li>
+                </ul>
+                <div class="project__actions">
+                  <button class="btn btn--soft project__case" data-case="open" type="button">
+                    Caso
+                  </button>
+                  <a
+                    aria-label="Ver demo"
+                    class="btn btn--ghost"
+                    href="https://www.energypowercf.es/"
+                    >Demo</a
+                  >
+                  <a
+                    aria-label="Ver código"
+                    class="btn btn--ghost"
+                    href="https://github.com/cristianreey/energypowercf.git"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project card"
+              data-context="Web de e-commerce básico/escaparate para marca de ropa."
+              data-highlights="Catálogo, foco en producto, estilo de marca consistente."
+              data-reveal="true"
+              data-result="Experiencia de navegación moderna y visual."
+              data-role="Front-end (UI + interacción)."
+              data-tags="ui"
+            >
+              <div aria-hidden="true" class="project__thumb">
+                <img alt="" loading="lazy" src="assets/img/fullx.png" />
+              </div>
+              <div class="project__body">
+                <h3 class="card__title">Originals Full X</h3>
+                <p class="card__text">
+                  Web realizada para la venta de una ropa de una marca propia.
+                </p>
+                <ul class="tags tags--mini">
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">JS</li>
+                  <li class="tag">RESPONSIVE</li>
+                </ul>
+                <div class="project__actions">
+                  <button class="btn btn--soft project__case" data-case="open" type="button">
+                    Caso
+                  </button>
+                  <a
+                    aria-label="Ver demo"
+                    class="btn btn--ghost"
+                    href="https://cristianreey.github.io/FULLX/"
+                    >Demo</a
+                  >
+                  <a
+                    aria-label="Ver código"
+                    class="btn btn--ghost"
+                    href="https://github.com/cristianreey/FULLX.git"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section__head" data-reveal="true">
+            <p class="section__eyebrow">Contacto</p>
+            <h2 class="section__title">Contacto</h2>
+            <p class="section__subtitle">
+              Si quieres hablar de un proyecto, respondo rápido y con claridad.
+            </p>
+          </div>
+
+          <div class="grid grid--2">
+            <div class="card" data-reveal="true">
+              <h3 class="card__title">Escríbeme</h3>
+              <form class="form" id="contactForm">
+                <label class="form__field">
+                  <span class="form__label">Nombre</span>
+                  <input class="input" name="name" placeholder="Tu nombre" required type="text" />
+                </label>
+                <label class="form__field">
+                  <span class="form__label">Email</span>
+                  <input
+                    class="input"
+                    name="email"
+                    placeholder="tu@email.com"
+                    required
+                    type="email"
+                  />
+                </label>
+                <label class="form__field">
+                  <span class="form__label">Mensaje</span>
+                  <textarea
+                    class="input"
+                    name="message"
+                    placeholder="Cuéntame qué necesitas..."
+                    required
+                    rows="5"
+                  ></textarea>
+                </label>
+                <button class="btn btn--primary" type="submit">Enviar</button>
+                <p class="form__hint" id="formHint" role="status"></p>
+              </form>
+            </div>
+
+            <div class="card" data-reveal="true">
+              <h3 class="card__title">Información</h3>
+              <p class="card__text">También puedes contactarme directamente:</p>
+              <ul class="list">
+                <li>
+                  <strong>Email:</strong>
+                  <a class="link" href="mailto:Cris11salle@gmail.com">Cris11salle@gmail.com</a>
+                </li>
+                <li>
+                  <strong>Tel:</strong> <a class="link" href="tel:+34665372510">+34 665 372 510</a>
+                </li>
+                <li>
+                  <strong>LinkedIn:</strong>
+                  <a
+                    class="link"
+                    href="https://www.linkedin.com/in/cristian-rey-626257270/"
+                    rel="noopener"
+                    target="_blank"
+                    >Perfil ↗</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog aria-label="Caso de estudio" class="modal" id="caseModal">
+      <div class="modal__inner">
+        <div class="modal__head">
+          <h3 class="modal__title" id="caseTitle">Caso</h3>
+          <button
+            aria-label="Cerrar"
+            class="btn btn--ghost modal__close"
+            id="caseClose"
+            type="button"
+          >
+            Cerrar
+          </button>
+        </div>
+        <div class="modal__body">
+          <div class="modal__block">
+            <div class="modal__k">Contexto</div>
+            <div class="modal__v" id="caseContext"></div>
+          </div>
+          <div class="modal__block">
+            <div class="modal__k">Rol</div>
+            <div class="modal__v" id="caseRole"></div>
+          </div>
+          <div class="modal__block">
+            <div class="modal__k">Lo más relevante</div>
+            <div class="modal__v" id="caseHighlights"></div>
+          </div>
+          <div class="modal__block">
+            <div class="modal__k">Resultado</div>
+            <div class="modal__v" id="caseResult"></div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__text">© <span id="year"></span> Cristian Rey</p>
+      </div>
+    </footer>
+
+    <script defer="" src="app.js"></script>
+  </body>
+</html>
